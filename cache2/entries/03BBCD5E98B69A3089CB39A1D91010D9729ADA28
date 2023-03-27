@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>PEmicro | Experts in Embedded tools for Flash Programming and Development</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="/stylesheet_main_v006.css" /> 
+	<script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-558444-2']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+
+
+<script type="text/javascript" src="//use.typekit.net/qcz1hhh.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+
+var search_showing = false;
+
+function getObject(id,d)
+{
+	var i, x;  
+	if(!d) d=document; 
+	if(!(x=d[id])&&d.all) 
+		x=d.all[id]; 
+	for (i=0;!x&&i<d.forms.length;i++) 
+		x=d.forms[i][id];
+	for(i=0;!x&&d.layers&&i<d.layers.length;i++) 
+		x=getObject(id,d.layers[i].document);
+	if(!x && document.getElementById) 
+		x=document.getElementById(id); 
+	return x;
+};
+
+function show_search()
+{
+	if (search_showing == false)
+	{
+		getObject("searchDIV").style.display = "block";
+		search_showing = true;
+	}
+	else
+	{
+		getObject("searchDIV").style.display = "none";
+		search_showing = false;
+	}
+}
+
+//-->
+</script>
+<style type="text/css">
+<!--
+
+.top_menu_link_font {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.top_menu_link_font:hover {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color:#0066FF;
+}
+
+.top_menu_link_font:visited {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+.top_menu_welcome_font {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+-->
+</style>
+
+
+
+<script type="text/javascript">
+_linkedin_data_partner_id = "179929";
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=179929&fmt=gif" />
+</noscript>
+
+
+
+<script type="text/javascript" src="/Scripts/mlddm_dropdown_menu/mlddmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="/Scripts/mlddm_dropdown_menu/pemicro/mlddmenu.css" />
+
+
+
+
+
+<body onLoad="MM_preloadImages('/includes/include_top_menu_images_v3/top_menu_hover_04.gif','/includes/include_top_menu_images_v3/top_menu_hover_05.gif','/includes/include_top_menu_images_v3/top_menu_hover_06.gif','/includes/include_top_menu_images_v3/top_menu_hover_07.gif','/includes/include_top_menu_images_v3/top_menu_hover_08.gif','/includes/include_top_menu_images_v3/top_menu_hover_09c.gif','/includes/include_top_menu_images_v3/top_menu_hover_10b.gif');mlddminit();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" >
+
+		
+		
+		
+		
+		<table id="Table_01" width="980" height="81" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td rowspan="2">
+					<a href="/index.cfm" title="return to homepage"><img src="/includes/include_top_menu_images_v3/top_menu_unselected_01.gif" alt="PEmicro logo" width="94" height="81" border="0"></a></td>
+				<td colspan="7" align="left" bgcolor="#000099" height="57" background="/includes/include_top_menu_images_v3/top_menu_unselected_02.gif">
+				
+				
+					<table border="0" width="100%">
+						<tr>
+							<td align="left" nowrap>
+							
+							<img src="/includes/include_top_menu_images/spacer.gif" width="1" height="37" border="0" align="absmiddle">
+							
+							<img src="/includes/include_top_menu_images/icon_cart_000.png" width="25" height="37" border="0" align="absmiddle">
+							
+							<a href="/NEXTGEN/shopping_cart_edit.cfm" class="top_menu_link_font">Cart</a> 
+							
+								<img src="/includes/include_top_menu_images/spacer.gif" width="8" height="37" align="absmiddle">
+							
+								<img src="/includes/include_top_menu_images/icon_new_account_000.png" width="20" height="37" border="0" align="absmiddle">
+								
+								<a href="https://www.pemicro.com/login_new_user_form.cfm?mode=newUser" class="top_menu_link_font">New Account</a> 
+								
+								<img src="/includes/include_top_menu_images/spacer.gif" width="8" height="37" align="absmiddle">
+								
+								<img src="/includes/include_top_menu_images/icon_login_000.png" width="23" height="37" border="0" align="absmiddle">
+								
+								<a href="https://www.pemicro.com/login.cfm" class="top_menu_link_font">Login</a>
+							
+							
+							<img src="/includes/include_top_menu_images/spacer.gif" width="8" height="37" align="absmiddle">
+							
+                            
+							
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <form id="form1" name="form1" method="post" action="/search_google.cfm" style="display: inline;">
+                              <label for="search_field"></label>
+                              <input name="search_field" type="text" placeholder="Google Search" id="search_field" size="30" maxlength="128" />
+                              <input type="submit" name="button" id="button" value="Search" />
+                            </form>
+                            
+                            
+                            
+                            
+							
+							</td>
+							<td align="left">
+							
+							<br>
+							
+							
+							
+							
+                            
+								
+							</td>
+						</tr>
+					</table>
+				
+				
+			  </td>
+				<td rowspan="2" valign="middle"><!--<a href="http://www.freescale.com/" title="Return to homepage">--><img src="/includes/include_top_menu_images_v3/proven_partner_web2.jpg" width="133" height="81" border="0" alt="Logo image"><!--</a>--></td>
+			</tr>
+            
+			<tr>
+				<td><a href="/index.cfm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('roll_home','','/includes/include_top_menu_images_v3/top_menu_hover_04.gif',1)"><img src="/includes/include_top_menu_images_v3/top_menu_unselected_04.gif" alt="Home" name="roll_home" width="105" height="24" border="0" id="roll_home" /></a></td><td><a href="/about_us/index.cfm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('roll_about_us','','/includes/include_top_menu_images_v3/top_menu_hover_05.gif',1)"><img src="/includes/include_top_menu_images_v3/top_menu_unselected_05.gif" alt="About us" name="roll_about_us" width="104" height="24" border="0" id="roll_about_us" /></a></td><td><a href="/products/products_find.cfm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('roll_products','','/includes/include_top_menu_images_v3/top_menu_hover_06.gif',1)"><img src="/includes/include_top_menu_images_v3/top_menu_unselected_06.gif" alt="Products" name="roll_products" width="104" height="24" border="0" id="roll_products" /></a></td><td><a href="/support/index.cfm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('roll_support','','/includes/include_top_menu_images_v3/top_menu_hover_07.gif',1)"><img src="/includes/include_top_menu_images_v3/top_menu_unselected_07.gif" alt="Support" name="roll_support" width="104" height="24" border="0" id="roll_support" /></a></td><td><a href="/forums/index.cfm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('roll_forums','','/includes/include_top_menu_images_v3/top_menu_hover_08.gif',1)"><img src="/includes/include_top_menu_images_v3/top_menu_unselected_08.gif" alt="Forums" name="roll_forums" width="104" height="24" border="0" id="roll_forums" /></a></td><td><a href="/blog" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('roll_blog','','/includes/include_top_menu_images_v3/top_menu_hover_09c.gif',1)"><img src="/includes/include_top_menu_images_v3/top_menu_unselected_09c.gif" alt="Blog" name="roll_blog" width="106" height="24" border="0" id="roll_blog" /></a></td><td><a href="/contact_us/index.cfm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('roll_customer_service','','/includes/include_top_menu_images_v3/top_menu_hover_10b.gif',1)"><img src="/includes/include_top_menu_images_v3/top_menu_unselected_10b.gif" alt="Customer Service" name="roll_customer_service" width="126" height="24" border="0" id="roll_customer_service" /></a></td><!--<td><img src="/includes/include_top_menu_images_v3/top_menu_unselected_11.gif" width="133" height="24" alt=""></td>--></tr></table>
+<img src="/images/trans_dot.gif" width="980" height="4" />
+		
+		
+		
+
+	</td>
+  </tr>
+</table> 
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr valign="top">
+    <td align="center">
+<div class="supported_devices2" style="width:98%; margin-left:auto; margin-right:auto; ">  <!--positioned on left side--->
+        	<h2 class="supported_header_main">HARDWARE COMPATIBILITY GUIDE for ARM<span style="font-size:11px; vertical-align:super">&reg;</span> CORTEX<span style="font-size:11px; vertical-align:super">&reg;</span> DEVICES</h2>
+           
+            <div class="header_line" align="center">
+      </div>
+		
+
+		<div class="device_text" style="width:85%; margin-left:50px; margin-right:50px;">
+			<p> This simple Hardware Compatibility Guide will help you determine which is the most suitable hardware interface for you to use with your NXP ARM Cortex device. PEmicro's  <a href="/products/product_view.cfm?product_ID=15320165 ">CYCLONE LC</a> & <a href="/products/product_view.cfm?product_ID=15320167">CYCLONE FX</a> in-system programmers, <a href="/products/product_viewDetails.cfm?product_id=15320137">USB Multilink</a> & <a href="/products/product_viewDetails.cfm?product_id=15320143">USB Multilink FX</a> debug probes, and NXP's <a href="https://www.pemicro.com/osbdm">OSJTAG</a>  and <a href="/opensda/index.cfm">OpenSDA</a> are each effective solutions, depending on your needs.</p>
+
+			<!--<div style="width:640px; margin:auto;"><img src="/fixedlinks/divider_gray.png"></div>-->
+			<br><div class="header_line" align="center"></div>
+</div>
+
+<div class="device_text" style="width:85%; margin-left:50px; margin-right:50px;">
+
+
+<h3>CYCLONE LC & CYCLONE <span style="color:red;">FX</span> - In-System Programmer & Debug Interface</h3>
+<p class="indented">
+<div style="float:left; margin-left: 12px; margin-right:12px;">
+<img src="/images/cw_hardware/cyclone_univ_and_fx2.png" align="left" border="0" width="220" height="150"></div>
+
+
+<strong>Supports:</strong>&nbsp;NXP KinetisÃ¯Â¿Â½, LPC, i.MX, S32, MPC55xx-57xx, S12Z, ColdFire+/V1, ColdFire V2-4,MPC5xx/8xx, DSC, HCS08, RS08, HC(S)12(X), HC08, MAC7xxx <br>
+<strong>Interfaces:</strong> USB, Serial, 10/100 Ethernet <br>
+<strong>Usage:</strong> Development & Production (including high-volume programming), Debug, Test
+
+
+
+
+<p>
+<p class="indented">
+The <a href="/products/product_view.cfm?product_ID=15320165 ">CYCLONE LC</a> & <a href="/products/product_view.cfm?product_ID=15320167">CYCLONE FX</a> are PEmicro's next-gen Cyclones, designed for small- or large-scale production programming, debug, and test. In addition to multiple communications interfaces (including USB, Ethernet, and Serial), stand-alone functionality, and other advanced capabilities, the <span style="color:red;">FX</span> models add speed, storage, and security enhancements to save valuable production time and help manage difficult issues like control of intellectual property. </p>
+	<p class="indented"><stronG>Control and Automation:</stronG> PEmicro Cyclones include the <a href="https://www.pemicro.com/products/product_viewDetails.cfm?product_id=15320167&productTab=5">Cyclone Control Suite</a>, which gives the user manual, scripted, and .DLL options for control and automation. The CYCLONE FX includes advanced  options, including gang control/automation of multiple Cyclones (these advanced options can be purchased as a license for CYCLONE LC programmers). </p>
+<p class="indented"><strong>Download The <a href="https://www.pemicro.com/downloads/download_file.cfm?download_id=461">CYCLONE LC</a> & <a href="https://www.pemicro.com/downloads/download_file.cfm?download_id=461">CYCLONE FX</a> User Manuals</a></strong></p>
+
+
+
+
+
+
+
+			<br><div class="header_line" align="center"></div>
+</div>
+
+<div class="device_text" style="width:85%; margin-left:50px; margin-right:50px;">
+
+<h3>USB Multilink FX - High Speed, Advanced Debug Probe</h3>
+<div style="float:left; margin-left: 12px; margin-right:12px; MARGIN-BOTTOM:5PX;">
+	<img src="/images/cw_hardware/multilink-fx2.png" align="left" border="0"></div>
+
+<strong>Supports:</strong>&nbsp;NXP KinetisÃ¯Â¿Â½, LPC, i.MX, S32, ColdFire V1/+V1 & V2-4, MPC55xx-57xx, Power MPC5xx/8xx, HCS08, RS08, HC(S)12(X), S12Z, DSC, HC16/683xx <br>
+<strong>Interfaces:</strong> USB Port <br>
+<strong>Usage:</strong> Development/Debug
+
+
+<p class="indented">
+The <a href="/products/product_viewDetails.cfm?product_id=15320143">USB Multilink Universal FX</a> is the new <strong>high-speed</strong> version
+of PEmicroÃ¯Â¿Â½s groundbreaking, all-in-one USB Multilink Universal interface. It features lightning-fast download speeds and includes support, in a single interface, for many NXP architectures. The USB Multilink Universal FX combines these advanced features, which distinguish it from the standard USB Multilink Universal:</p>
+<ul style="display:block;">
+<li>Up to 10X faster communications speed*
+<li>Can provide power to the target MCU
+<li>I/O line clamping for added protection
+<li>Supports additional NXP devices
+</ul>
+<p class="indented">
+It includes multiple ribbon cables to allow connections to the various supported devices. The case simply flips open for easy access to the headers. The USB Multilink Universal FX is supported by PEmicro software, in addition to NXP's Codewarrior and software from other third party vendors.</p>
+<p class="indented">
+*Performance boosts are greatest for synchronous devices: Kinetis, LPC, S32(ARM), MPC55xx-57xx, Coldfire V2-V4,  DSC, HC16/683xx. The USB Multilink Universal FX might also be preferred if the user is working with other, higher memory footprint devices, or needs to provide power to the target.
+</p>
+
+<br><div class="header_line" align="center"></div>
+</div>
+
+<div class="device_text" style="width:85%; margin-left:50px; margin-right:50px;">
+<h3>USB Multilink - Debug Probe</h3>
+<div style="float:left; margin-left: 12px; margin-right:12px;">
+	<img src="/images/cw_hardware/multilink2.png" align="left" border="0" width="227" length="161"></div>
+<strong>Multilink ACP Supports:</strong> NXP Kinetis, LPC, i.MX, S32 (ARM)<br>
+
+<strong>Multilink Universal Supports:</strong> NXP Kinetis, LPC, i.MX, S32 (ARM & Power), ColdFire V1/+V1 & V2-4, MPC55xx-57xx, HCS08, RS08, HC(S)12(X), S12Z,  DSC <br>
+<strong>Interfaces:</strong> USB Port <br>
+<strong>Usage:</strong> Development/Debug
+<p>
+<p class="indented">
+PEmicro's <a href="/products/product_viewDetails.cfm?product_id=15320137">USB Multilinks</a> are economical, reliable USB-to-target debug probes that use multiple headers to support several NXP MCUs.  PEmicro offers the <strong>Multilink ACP</strong> for NXP's ARM devices, and the <strong>Multilink Universal</strong> which also includes support for several additional NXP & STMicroelectronics 8-/16-/32-bit architectures.</p>
+
+<p class="indented">Multilinks are easy to set up, the case simply flips open for easy access to the headers.  Multiple ribbon cables are included to allow connections to the various supported devices. USB Multilinks are supported by PEmicro software, in addition to NXP's Codewarrior and software from other third party vendors. A configuration utility is available on PEmicro's website which allows configuration of the USB Multilink for use with older software packages.</p>
+
+
+
+
+<br><div class="header_line" align="center"></div>
+</div>
+
+<div class="device_text" style="width:85%; margin-left:50px; margin-right:50px; height:265px;">
+
+
+<h3>Open Source JTAG (OSJTAG)</h3>
+<div style="float:left; margin-left: 12px; margin-right:12px;">
+	<img src="/images/osbdm/osbdm_tower.jpg" align="left" border="0"></div>
+
+<p class="indented">
+
+NXP offers certain Kinetis-based development boards with an integrated debug circuit based on Open Source JTAG. PEmicro developed the software interface that works with this integrated debug circuit, which is used by NXP's MCUXpresso, Kinetis Design Studio, S32 Design Studio, Codewarrior, and other third party tools such as IAR Workbench and Keil uVision. These tools support the development boards from NXP, PEmicro's <a href="/products/product_viewDetails.cfm?product_id=15320137">USB Multilink</a> & <a href="/products/product_viewDetails.cfm?product_id=15320143">USB Multilink FX</a> debug probes, as well as our <a href="/products/product_view.cfm?product_ID=15320165 ">CYCLONE LC</a> & <a href="/products/product_view.cfm?product_ID=15320167">CYCLONE FX</a> in-system programmers.</p> 
+<p class="indented_table">PEmicro also contributed much of the interface project back into open source. The OSJTAG source has been published on PEmicro's <a href="https://www.pemicro.com/osbdm">OSBDM/OSJTAG page</a>.</p>
+
+
+
+
+</font>
+
+
+
+<br>
+</div>
+<br>
+
+<div class="device_text" style="width:85%; margin-left:50px; margin-right:50px;">
+<br><div class="header_line" align="center"></div>
+
+
+<h3>OpenSDA</h3>
+<div style="float:left; margin-left: 12px; margin-right:12px;">
+	<img src="/images/cw_hardware/opensda2.png" align="left" border="0"></div>
+
+<p>
+
+
+
+
+<p class="indented">
+NXP's OpenSDA is an open-standard adapter that allows debug and serial communication 
+between a USB host and your embedded target. PEmicro developed OpenSDA 
+software, including an MSD Bootloader (located on the flash) and a group of   
+applications that we host on our OpenSDA resource page, along with drivers and other information. 
+</p>
+<p class="indented"><strong><a href="/opensda">Visit PEmicro's OpenSDA Resource page</a></strong>
+
+<br><div class="header_line" align="center"></div><br>
+</div>
+
+
+
+<font size="1" face="arial, sans-serif">ARM and Cortex are registered trademarks of ARM Limited. Kinetis is a registered trademark of NXP Semiconductors. </font>
+
+	</td>
+  </tr>
+  
+  <tr valign="top"> 
+    <td align="center"><br><br>
+	
+  
+<hr size="1" />
+<center>
+<span class="font_micro">&copy; 2023 P&amp;E Microcomputer Systems Inc.</span><br>
+    <a href="/terms_of_use_and_sales_agreement.cfm" class="font_micro highlight_link">Website Terms of Use and Sales Agreement</a><br /><br />
+    
+    
+<span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=DDx6337pcgIycST497pA8Lt7mgwif1yPSMBYknwOLigxMl8rUhR3F"></script></span>
+</center>
+<br />
+
+
+<br />
+<br />
+	</td>
+  </tr>
+  
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+´¿<¨Bv      cýIcýJEN‚ÅcýJ   V    O^partitionKey=%28https%2Cpemicro.com%29,:https://www.pemicro.com/hardware/kinetis.cfm necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: text/html;charset=UTF-8
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+Date: Mon, 27 Feb 2023 19:45:12 GMT
+Content-Length: 20896
+ original-response-headers Content-Type: text/html;charset=UTF-8
+Server: Microsoft-IIS/7.5
+Set-Cookie: CFID=Z51hf3dh6ctss7kcusxh2ekffqttsuwtu1wy118x32o68a5m7l3-49000392; Domain=.pemicro.com; Expires=Wed, 19-Feb-2053 19:45:12 GMT; Path=/; HttpOnly
+Set-Cookie: CFTOKEN=Z51hf3dh6ctss7kcusxh2ekffqttsuwtu1wy118x32o68a5m7l3-2fed7bff2564edf5-CC11551C-9AB0-F521-B545E1804B2E7218; Domain=.pemicro.com; Expires=Wed, 19-Feb-2053 19:45:12 GMT; Path=/; HttpOnly
+X-Powered-By: ASP.NET
+Date: Mon, 27 Feb 2023 19:45:12 GMT
+Content-Length: 20896
+ ctid 1 uncompressed-len 0 net-response-time-onstart 729 net-response-time-onstop 837   Q 
