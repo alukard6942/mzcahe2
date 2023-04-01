@@ -30,25 +30,26 @@ impl Debug for Timestamp {
 
 pub fn read_struct_buff<Struct: Endian>(b: &[u8]) -> Option<Struct> {
     let size = size_of::<Struct>();
-    if size < b.len() {return None};
+    if b.len() < size {return None};
     Some(unsafe{
         let mut header = MaybeUninit::<Struct>::uninit();
         // btw how does this work as slice gets deleted shouldnt be the buffer be deleted as well
         // what am i missing
         let slice = 
             slice::from_raw_parts_mut(&mut header as *mut _ as *mut u8, size);
-        slice.clone_from_slice(b); 
+        slice.clone_from_slice(b.get_unchecked(0 .. size)); 
         header.assume_init()
     }.from_be())
 }
 
-pub fn read_struct<Struct: Endian>(f: &mut File) -> Option<Struct> {
+pub fn read_struct<Struct, Buffer>(mut f: Buffer) -> Option<Struct> where Struct: Endian, Buffer: Read
+{
     Some( unsafe {
         let mut header = MaybeUninit::<Struct>::uninit();
         let config_slice =
             slice::from_raw_parts_mut(&mut header as *mut _ as *mut u8, size_of::<Struct>());
         // `read_exact()` comes from `Read` impl for `&[u8]`
-        match f.read_exact(config_slice) {
+        match f.read(config_slice) {
             Ok(it) => it,
             Err(_) => return None,
         };

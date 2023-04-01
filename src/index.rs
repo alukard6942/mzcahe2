@@ -1,6 +1,15 @@
 use endian_trait::Endian;
 
-use crate::utils::Timestamp;
+use crate::{utils::{Timestamp, read_struct_buff}, error::{CResult, Error}};
+
+use std::{fs::File, mem::size_of};
+
+use crate::utils::read_struct;
+
+pub struct IndexFile {
+    header: Header,
+    records: Vec<Record>,
+}
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone, Endian)]
@@ -55,6 +64,22 @@ struct Record {
     flags: u32,
 }
 
+pub fn read_index_file(b: &mut [u8]) -> CResult<IndexFile> {
+
+    let header = match read_struct_buff::<Header>(b) {
+        Some(it) => it,
+        None => return Err(Error::MissingHeader),
+    };
+
+    let mut records = Vec::new();
+
+    while let Some(r) = read_struct(b as &[u8]) {
+        records.push(r);
+    }
+
+    Ok(IndexFile { header, records })
+}
+
 #[cfg(test)]
 mod tests {
     use std::{fs::File, mem::size_of};
@@ -74,7 +99,7 @@ mod tests {
         let path = "cache2/index";
         let mut f = File::open(path.to_string()).unwrap();
 
-        let h = read_struct::<Header>(&mut f).unwrap();
+        let h: Header = read_struct(&mut f).unwrap();
 
         let t = format!("{}", h.last_modification);
 
@@ -88,9 +113,10 @@ mod tests {
         let path = "cache2/index";
         let mut f = File::open(path.to_string()).unwrap();
 
-        let _ = read_struct::<Header>(&mut f).unwrap();
-
-        while let Some(record) = read_struct::<Record>(&mut f) {
+        let _ : Header = read_struct(&mut f).unwrap();
+ 
+        // fuck you for not leting me declere the type as the part of the let Some statment
+        while let Some(record) = { let tmp : Option<Record> = read_struct(&mut f); tmp }{
             print!("{:#?}", record);
             assert!(record.on_start_time <= record.on_stop_time);
         }
