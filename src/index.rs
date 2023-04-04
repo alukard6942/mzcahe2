@@ -2,12 +2,13 @@ use endian_trait::Endian;
 
 use crate::{utils::{Timestamp, read_struct_buff}, error::{CResult, Error}};
 
-use std::{fs::File, mem::size_of};
+use std::{fs::File, mem::size_of, io::Cursor};
 
 use crate::utils::read_struct;
 
 pub struct IndexFile {
     header: Header,
+    // todo: hasmap with the hash as a hash
     records: Vec<Record>,
 }
 
@@ -66,14 +67,15 @@ struct Record {
 
 pub fn read_index_file(b: &mut [u8]) -> CResult<IndexFile> {
 
-    let header = match read_struct_buff::<Header>(b) {
+    let mut cursor = Cursor::new(b);
+
+    let header : Header = match read_struct(&mut cursor) {
         Some(it) => it,
         None => return Err(Error::MissingHeader),
     };
-
     let mut records = Vec::new();
 
-    while let Some(r) = read_struct(b as &[u8]) {
+    while let Some(r) = read_struct(&mut cursor) {
         records.push(r);
     }
 

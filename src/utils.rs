@@ -18,7 +18,7 @@ impl Display for Timestamp {
         // Create DateTime from SystemTime
         let datetime = DateTime::<Utc>::from(d);
         // Formats the combined date and time with the specified format string.
-        let timestamp_str = datetime.format("%Y-%m-%d %H:%M:%S.%f").to_string();
+        let timestamp_str = datetime.format("%Y-%m-%dT%H:%M:%S").to_string();
         write!(f, "{}", timestamp_str)
     }
 }
@@ -42,14 +42,15 @@ pub fn read_struct_buff<Struct: Endian>(b: &[u8]) -> Option<Struct> {
     }.from_be())
 }
 
-pub fn read_struct<Struct, Buffer>(mut f: Buffer) -> Option<Struct> where Struct: Endian, Buffer: Read
+// this may allow the implementation to use streams and spare some memory
+pub fn read_struct<Struct>(f: &mut impl Read) -> Option<Struct> where Struct: Endian
 {
     Some( unsafe {
         let mut header = MaybeUninit::<Struct>::uninit();
         let config_slice =
             slice::from_raw_parts_mut(&mut header as *mut _ as *mut u8, size_of::<Struct>());
         // `read_exact()` comes from `Read` impl for `&[u8]`
-        match f.read(config_slice) {
+        match f.read_exact(config_slice) {
             Ok(it) => it,
             Err(_) => return None,
         };
