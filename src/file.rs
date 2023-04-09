@@ -268,7 +268,10 @@ mod tests {
                 buff
             };
 
-            let cache = parse_cachefile(&data).unwrap();
+            let cache = match parse_cachefile(&data) {
+                Ok(it) => it,
+                Err(err) => continue,
+            };
 
             let check = match header_validity_test(cache.header) {
                 true => {

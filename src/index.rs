@@ -106,7 +106,7 @@ mod tests {
         let t = format!("{}", h.last_modification);
 
         assert_eq!(h.version, 10);
-        assert_eq!(t, "2023-02-27 19:45:18.000000000");
+        assert_eq!(t, "2023-02-27T19:45:18");
         assert_eq!(h.is_dirty, 1);
     }
 

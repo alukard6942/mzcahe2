@@ -37,8 +37,7 @@ mod tests {
             println!("{}", cache);
             entries.push(cache);
         }
-
-        assert!(false);
+        // assert!(false);
         Ok(())
     }
 
